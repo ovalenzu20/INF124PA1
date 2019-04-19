@@ -1,119 +1,78 @@
-
-body{
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
-    color: black;
-
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.HeaderContainer{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #aabbcc;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+a {
+  text-decoration: none;
+}
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 20px;
 }
 
-.MenuOption{
-    padding: 20px;
-    height: 100%;
-    text-align: center;
-
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  padding: 20px;
 }
 
-.MenuOption:first-child{
-    padding: 20px;
-    margin-left: 50px;
-    font-weight: 700;
-    margin-right: 15px;
-    font-size: 24px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
-}
-
-
-.MenuOption:hover{
-    background-color: black;
-    color:white;
-}
-
-th{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    padding: 20px;
-}
-
-
-td{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    padding: 20px;
-}
-
-img{
-    width: 100px;
-    height: 100px;
+img {
+  width: 100px;
+  height: 100px;
 }
 
 .parallax {
   background-image: url("img_parallax.jpg");
-  min-height: 500px; 
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.about-header
-{
-    background-color: #aabbcc;
-    font-size: 50px;
-    padding-bottom: 70px;
-    padding-top: 100px;
-    text-align: center;
+.about-header {
+  background-color: #aabbcc;
+  font-size: 50px;
+  padding-bottom: 70px;
+  padding-top: 100px;
+  text-align: center;
 }
 
-.about-me
-{
-    padding-top: 300px;
-    padding-bottom: 300px;
-    background-image: url(imgs/forget-me-not.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    
-
-
+.about-me {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-image: url(imgs/forget-me-not.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.about-me h1
-{
-    text-align: center;
-    font-size: 90px;
-    font-weight: bold;
+.about-me h1 {
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
 }
 
-.about-me h2
-{
-    font-size: 40px;
-    padding-left: 80px;
-    padding-right: 80px;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.about-me h2 {
+  font-size: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.about-me-box
-{
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+.about-me-box {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#heroImage {
+  background-image: url("imgs/Carnation-Flower.jpg");
+  height: 100vh;
 }
