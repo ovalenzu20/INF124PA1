@@ -79,8 +79,11 @@
   }
   .logoImage {
     display: block !important;
-    width: 95px;
-    height: 45px;
+    /* width: 95px;
+    height: 45px; */
+    font-family: "Exo 2", sans-serif;
+    font-size: 30px;
+    width: 100%;
   }
 
   .menu {

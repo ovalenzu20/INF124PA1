@@ -73,6 +73,45 @@ img {
 }
 
 #heroImage {
-  background-image: url("imgs/Carnation-Flower.jpg");
+  background-image: url("imgs/headerimage.jpg");
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#heroText {
+  font-family: "Exo 2", sans-serif;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.infoBar {
+  background-image: url("/imgs/jasmine.jpg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#infoButton {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 3em 0.3em 0.3em 0;
+  text-decoration: none;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+#infoButton:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
