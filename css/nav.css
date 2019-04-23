@@ -78,7 +78,7 @@
 @media (max-width: 1036px) {
   .logo {
     background-color: rgb(255, 255, 255);
-    color: rgb(112, 112, 112);
+    color: rgb(112, 112, 112) !important;
     border: none !important;
   }
 
