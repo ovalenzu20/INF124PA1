@@ -56,6 +56,14 @@ img {
   color: white;
 }
 
+<<<<<<< HEAD
+=======
+#aboutFlowerImg {
+  width: 200px;
+  height: 200px;
+}
+
+>>>>>>> e4d10e2188cb32c673f52f4221088701f5b5efda
 #heroImage {
   background-image: url("imgs/headerimage.jpg");
   background-repeat: no-repeat;
