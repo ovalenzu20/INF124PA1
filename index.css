@@ -24,6 +24,11 @@ img {
   height: 100px;
 }
 
+.menuItem
+{
+  color:white;
+}
+
 .parallax {
   background-image: url("img_parallax.jpg");
   min-height: 500px;
@@ -33,6 +38,7 @@ img {
   background-size: cover;
 }
 
+<<<<<<< Updated upstream
 #aboutTexth1 {
   font-family: "Exo 2", sans-serif;
   font-size: 40px;
@@ -53,6 +59,9 @@ img {
   width: 200px;
   height: 200px;
 }
+=======
+
+>>>>>>> Stashed changes
 
 #heroImage {
   background-image: url("imgs/headerimage.jpg");
@@ -99,4 +108,32 @@ img {
 #infoButton:hover {
   color: #000000;
   background-color: #ffffff;
+}
+
+
+
+#shop
+{
+  color: white;
+  margin-top: 150px;
+}
+
+
+#shop table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto
+ 
+}
+
+#shop td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#shop tr:nth-child(even) {
+  background-color: #77f2b6;
 }
