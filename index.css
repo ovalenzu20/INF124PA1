@@ -38,7 +38,6 @@ img {
   background-size: cover;
 }
 
-<<<<<<< Updated upstream
 #aboutTexth1 {
   font-family: "Exo 2", sans-serif;
   font-size: 40px;
@@ -59,9 +58,6 @@ img {
   width: 200px;
   height: 200px;
 }
-=======
-
->>>>>>> Stashed changes
 
 #heroImage {
   background-image: url("imgs/headerimage.jpg");
