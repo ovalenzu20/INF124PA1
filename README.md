@@ -6,7 +6,7 @@ URL Address:
 Additional help to guide grader navigate website:
 
 **TODO:** 
-- [ ] An overview of your business, the products you sell, the management team, and any other information that you think makes sense for
+- [x] An overview of your business, the products you sell, the management team, and any other information that you think makes sense for
 the customers to know about your company.  
       
 - [ ] Display a list of products (at least 10) available for sale in a table with multiple rows and column, where each product is shown   within a separate cell.
