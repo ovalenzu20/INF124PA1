@@ -38,30 +38,23 @@ img {
   background-size: cover;
 }
 
-<<<<<<< Updated upstream
 #aboutTexth1 {
   font-family: "Exo 2", sans-serif;
   font-size: 40px;
   width: 100%;
-  text-align: center;
-
+  text-align: left;
+  margin-left: 520px;
   color: white;
 }
 #aboutText {
   font-family: "Exo 2", sans-serif;
   font-size: 20px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 520px;
   color: white;
 }
-
-#aboutFlowerImg {
-  width: 200px;
-  height: 200px;
-}
-=======
-
->>>>>>> Stashed changes
 
 #heroImage {
   background-image: url("imgs/headerimage.jpg");
