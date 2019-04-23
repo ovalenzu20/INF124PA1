@@ -33,44 +33,25 @@ img {
   background-size: cover;
 }
 
-.about-header {
-  background-color: #aabbcc;
-  font-size: 50px;
-  padding-bottom: 70px;
-  padding-top: 100px;
-  text-align: center;
-}
-
-.about-me {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background-image: url(imgs/forget-me-not.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.about-me h1 {
-  text-align: center;
-  font-size: 90px;
-  font-weight: bold;
-}
-
-.about-me h2 {
+#aboutTexth1 {
+  font-family: "Exo 2", sans-serif;
   font-size: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 100%;
   text-align: center;
-  font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+  color: white;
+}
+#aboutText {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
-.about-me-box {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+#aboutFlowerImg {
+  width: 200px;
+  height: 200px;
 }
 
 #heroImage {
@@ -90,6 +71,7 @@ img {
   text-align: center;
   color: white;
 }
+
 
 .infoBar {
   background-image: url("/imgs/jasmine.jpg");
