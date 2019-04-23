@@ -24,9 +24,8 @@ img {
   height: 100px;
 }
 
-.menuItem
-{
-  color:white;
+.menuItem {
+  color: white;
 }
 
 .parallax {
@@ -41,18 +40,14 @@ img {
 #aboutTexth1 {
   font-family: "Exo 2", sans-serif;
   font-size: 40px;
-  width: 100%;
   text-align: left;
-  margin-left: 33%;
   color: white;
 }
 #aboutText {
   font-family: "Exo 2", sans-serif;
   font-size: 20px;
-  width: 100%;
   text-align: left;
   margin-top: 40px;
-  margin-left: 33%;
   color: white;
 }
 
@@ -79,7 +74,9 @@ img {
   color: white;
 }
 
-
+#carouselExampleIndicators {
+  width: 500px;
+}
 .infoBar {
   background-image: url("/imgs/jasmine.jpg");
   height: 50vh;
@@ -108,26 +105,22 @@ img {
   background-color: #ffffff;
 }
 
-
-
-#shop
-{
+#shop {
   color: white;
   margin-top: 150px;
 }
-
 
 #shop table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 80%;
-  margin-left:auto; 
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
- 
 }
 
-#shop td, th {
+#shop td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -136,10 +129,10 @@ img {
 
 #shop tr:nth-child(even) {
   background-color: #77f2b6;
-  color: #F28777;
+  color: #f28777;
 }
 
-#shop td img{
+#shop td img {
   width: 150px;
   height: 150px;
 }

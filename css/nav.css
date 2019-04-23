@@ -25,6 +25,14 @@
     "menuDropDown menuDropDown";
 }
 
+.navbarbs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 95px auto;
+  grid-template-areas:
+    "logo navMenu"
+    "menuDropDown menuDropDown";
+}
 .logo {
   grid-area: logo;
   padding-left: 15%;
@@ -122,7 +130,7 @@
   .menuItem:nth-child(odd):hover {
     color: rgb(255, 255, 255);
   }
-  .collapse {
+  .collapses {
     background-color: rgb(255, 255, 255);
     color: rgb(112, 112, 112);
     grid-area: navMenu;
