@@ -138,3 +138,8 @@ img {
   background-color: #77f2b6;
   color: #F28777;
 }
+
+#shop td img{
+  width: 150px;
+  height: 150px;
+}
