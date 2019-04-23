@@ -2,6 +2,9 @@
 
 INF 124 PA 1: Building a dynamic website using HTML, JavaScript, and CSS
 
+Created by: Gyulnara Grigoryan, Gevork Gabrielyan, Omar Valenzuela
+ 
+
 URL Address:
 
 Additional help to guide grader navigate website:
@@ -9,7 +12,7 @@ Additional help to guide grader navigate website:
 Link:
 http://centaurus-1.ics.uci.edu:1032/
 
-TO Navigate site use the menu options to go to different pages.
+To Navigate site use the menu options to go to different pages.
 Index.html is the home page
 about.html is about our group
 contact.html is some information for contacting our business.
