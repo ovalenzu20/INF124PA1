@@ -123,8 +123,7 @@ img {
   color: white;
 }
 
-#shop td,
-th {
+#shop td,th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -136,7 +135,31 @@ th {
   color: #f28777;
 }
 
+
 #shop td img {
   width: 150px;
   height: 150px;
+}
+
+#shop td a img:hover
+{
+  width: 300px;
+  height: 300px;
+}
+
+#shop td img{
+  width: 150px;
+  height: 150px;
+}
+
+
+#tulip
+{
+  color: white;
+  margin-top: 150px;
+}
+
+#tulip.jumbotron
+{
+  background-color: #77f2b6;
 }
