@@ -12,7 +12,7 @@
 
 .scrolled {
   background-color: rgb(240, 240, 240);
-  color: rgb(112, 112, 112);
+  color: rgb(112, 112, 112) !important;
   border: none !important;
 }
 
