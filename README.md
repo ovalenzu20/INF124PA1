@@ -27,4 +27,4 @@ the customers to know about your company.
 
 - [ ] Provide the ability to track the mouse movement, such that when the mouse moves over a product image, the size of the image is increased, and when the mouse moves out, the size of the image is returned back to normal. This feature can be implemented on either the page that displays the various products, or on the pages that show the details of each product, or both.
 
-- [ ] Print the name of group members on the webpage.
+- [x] Print the name of group members on the webpage.
