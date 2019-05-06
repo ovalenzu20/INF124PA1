@@ -24,8 +24,6 @@ CREATE TABLE IF NOT EXISTS `flowersImages` (
 
 
 
-
-
 INSERT INTO flowers VALUES    
     ('Tulips', 15, 'Bright Pink Tulips Grown in California; 10 in a bundle.', 'Tulips are very popular around the world and are known for their beautiful hues. They can be found in a variety of sizes and colors.'),
     ('Carnation', 25, 'Available in Pink and Blue; 10 in a bundle.', 'Carnations are beautiful flowers and they change their color in 24 hours. Each color signifies a different meaning. Order some red carnations for your true love.' ),
