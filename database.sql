@@ -1,27 +1,24 @@
+DROP DATABASE IF EXISTS MotherEarth;
+CREATE DATABASE MotherEarth;
+USE MotherEarth;
 
-use MotherEarth;
-
-DROP TABLE IF EXISTS 'flowers';
-CREATE TABLE IF NOT EXISTS 'flowers' (
-  'flowerName' varchar(100) NOT NULL,
-  'price' int,
-  'description' varchar(400),
-  'extednedDescription' varchar(400)
-
-  PRIMARY KEY ('flowerName')
+DROP TABLE IF EXISTS `flowers`;
+CREATE TABLE IF NOT EXISTS `flowers` (
+  `flowerName` varchar(100) NOT NULL,
+  `price` integer  NOT NULL,
+  `description` varchar(400),
+  `extendedDescription` varchar(400),
+  PRIMARY KEY (`flowerName`)
 );
 
 
-
-
-DROP TABLE IF EXISTS 'flowers';
-CREATE TABLE IF NOT EXISTS 'flowers' (
-  'flowerName' varchar(100) NOT NULL,
-  'imageID' int,
-  'url' varchar(400),
-  'type' varchar(100)
-
-  PRIMARY KEY ('imageID')
+DROP TABLE IF EXISTS `flowersImages`;
+CREATE TABLE IF NOT EXISTS `flowersImages` (
+  `flowerName` varchar(100) NOT NULL,
+  `imageID` integer  NOT NULL,
+  `url` varchar(400),
+  `type` varchar(100),
+  PRIMARY KEY (`imageID`)
 );
 
 
