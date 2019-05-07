@@ -1,16 +1,20 @@
-DROP TABLE IF EXISTS `zipCodes`;
-CREATE TABLE IF NOT EXISTS `zipCodes` (
+
+USE MotherEarth;
+
+DROP TABLE IF EXISTS `zipcodeTable`;
+CREATE TABLE IF NOT EXISTS `zipcodeTable` (
   `zip` varchar(100) NOT NULL,
   `state` varchar(100),
   `city` varchar(100),
   PRIMARY KEY (`zip`)
+  );
 
 
 
 
 
 
-INSERT INTO zipCodes VALUES 
+INSERT INTO zipcodeTable VALUES 
     ("zip", "state", "city"), 
 ("10001", "NY", "New York"), 
 ("10002", "NY", "New York"), 

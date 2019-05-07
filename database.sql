@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS `flowers` (
   `description` varchar(400),
   `extendedDescription` varchar(400),
   PRIMARY KEY (`flowerName`)
+);
 
 
 DROP TABLE IF EXISTS `flowersImages`;

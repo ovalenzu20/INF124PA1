@@ -1,13 +1,12 @@
+
+USE MotherEarth;
+
+
 DROP TABLE IF EXISTS `taxTable`;
 CREATE TABLE IF NOT EXISTS `taxTable` (
   `zip` varchar(100) NOT NULL,
   `tax` varchar(100),
-  PRIMARY KEY (`zip`)
-
-
-
-
-
+  PRIMARY KEY (`zip`));
 
 
 INSERT INTO taxTable VALUES 
