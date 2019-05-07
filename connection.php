@@ -1,10 +1,9 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'].'/dbconfig.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/dbconfig.php';
 $hostname = DB_HOST;
 $username = DB_USER;
 $password = DB_PASSWORD;
 $dbname = DB_DATABASE;
-
 try {
     $conn = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
 

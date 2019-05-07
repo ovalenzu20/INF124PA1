@@ -225,7 +225,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="fistName"
+                  name="firstName"
                   placeholder="First Name"
                   required
                 />
@@ -260,7 +260,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="pidS"
+                  name="pid"
                   placeholder="Product ID"
                   required
                 />
@@ -397,7 +397,8 @@
                 />
               </div>
             </div>
-
+            <input type="hidden" id="tax" name="tax" value= <?php echo $price ?> />
+            <input type="hidden" id="cost" name="cost" value=<?php echo $price ?>/>
             <button
             type="submit" value="Submit"
               class="btn btn-primary"

@@ -19,6 +19,36 @@
     <title>Mother Earth</title>
   </head>
 <body>
+<?php include 'connection.php'; ?>
+
+<?php 
+
+
+    $pid = $_POST["pid"]; 
+    $firstName = $_POST["firstName"];
+    $lastName =$_POST["lastName"];
+    $address =$_POST["address"];
+    $inputAddress2 =$_POST["inputAddress2"];
+    $city =$_POST["city"];
+    $state =$_POST["state"]; 
+    $zip =$_POST["zip"];  
+    $cc =$_POST["cc"]; 
+    $shipping =$_POST["shipping"];
+    $phonenumber =$_POST["phonenumber"] ;
+    $email =$_POST["email"] ;
+    $total =$_POST["cost"] ;
+    $tax =$_POST["tax"] ;
+
+
+    $sql = "INSERT INTO `orders` (productID, firstName, lastName, address, address2, city, state, zip, creditCardNumber, shippingType, phoneNumber, total, email) VALUES ( '$pid', '$firstName', '$lastName', '$address', '$inputAddress2',  '$city', '$state', '$zip',  '$cc', '$shipping',  '$phonenumber' ,  '$total' , '$email')";
+    $result1 = $conn->exec($sql);
+
+
+
+
+    
+
+?>
 
     <div class="navbarContainer">
         <div class="navbarbs ">
@@ -49,22 +79,20 @@
         </div>
     </div>
 
-    <div id="confImage">
+    <div id="confImage" >
         <div id = "conformationBox">
-        <h1 id="confTexth1"> Thank you for your order!</h1>
+        <h1 id="confTexth1"> Thank you <?php echo $firstName ?> <?php echo $lastName ?>for your order of <?php echo $pid ?></h1>
         <p id="confText"> Here are your order details:<p> 
         <p id="confParagraph"> 
             Your order will be shipped to: <br>
-                &emsp; <?php echo  $_POST["address"]?> <?php echo  $_POST["inputAddress2"]?> <br>
-                &emsp; <?php echo  $_POST["city"]?>, <?php echo  $_POST["state"]?> <?php echo  $_POST["zip"]?> <br>
+                &emsp; <?php echo  $address ?> <?php echo  $inputAddress2?> <br>
+                &emsp; <?php echo  $city?>, <?php echo  $state?> <?php echo  $zip?> <br>
             
-            with the shipping type: {shipping type} <br>
+            with the shipping type: <?php echo  $shipping?>  <br>
         </p>
 
         <p id="confText"> 
-            Subtotal: {<?php echo  $_POST["email"]?>} <br>
-            Tax: {} <br>
-            Total: {} <br> </php>
+            Total: $<?php echo  $total ?> <br> 
         </div>
     </div>
 

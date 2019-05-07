@@ -34,6 +34,9 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `creditCardNumber` varchar(100),
   `shippingType` varchar(100),
   `phoneNumber` varchar(100),
+  `total` varchar(100),
+  `email` varchar(100),
+
 
   PRIMARY KEY (`productID`)
 );
