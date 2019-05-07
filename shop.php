@@ -11,11 +11,47 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:600" rel="stylesheet">
- 
+
     <title>Shop Mother Earth</title>
   </head>
 <body style="background: #F28777">
 
+<?php 
+    
+
+
+      $dbhost = "localhost";
+      $dbuser = "root";
+      $dbpass = "root";
+      $db = "MotherEarth";
+      $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
+
+
+
+      if ($conn) {
+        echo "Connected successfully";
+      }
+
+
+
+
+      $sql = "SELECT * FROM flowers";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "id: " . $row["flowerName"] . "<br>";
+        }
+    } else {
+        echo "0 results";
+    }
+    $conn->close();
+
+
+
+
+?>
 
     <div class="navbarContainer">
         <div class="navbar ">
@@ -26,7 +62,6 @@
                 <!-- <img class="logoImage" src="/images/icon.png" alt=""> -->
 
             </div>
-
             <div class="menu">
                     <div class="menuItem">
                       <a href="index.html" style="color:white">Home</a>
