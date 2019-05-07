@@ -32,7 +32,6 @@
                 <div class="menuItem">
                     <a href="index.php" style="color:white;">Home</a>
                 </div>
-                
                 <div class="menuItem">
                     <a href="about.html" style="color:white;">About</a>
                 </div>
@@ -52,10 +51,8 @@
     </div>
 
     <div id="heroImage">
-        <h1 id="aboutTexth1">Contact MotherEarth</h1>
-        <p id="aboutText">We are located at 1234 Flower Way, Irvine CA, 92617 <br>
-        If you have any questions - please do not hesitate to reach out to us! Either by email, or phone (123) 456-7890 <br>
-        Our hours are Monday-Sunday from 9am-5pm.</p>
+        <h1 id="aboutTexth1">Thank you for your order!</h1>
+        <p id="aboutText">Here are your order details: <br>
     </div>
 
 
