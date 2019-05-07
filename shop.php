@@ -29,23 +29,25 @@
 
 
       if ($conn) {
-        echo "Connected successfully";
+  
       }
 
 
 
 
-      $sql = "SELECT * FROM flowers";
+      $sql = "SELECT flowers.flowerName, flowers.price, flowers.description, blah.url
+      FROM flowers
+      NATURAL JOIN (SELECT flowersImages.flowerName, flowersImages.url 
+      FROM flowersImages
+      WHERE type = 'header') as blah";
       $result = $conn->query($sql);
 
-      if ($result->num_rows > 0) {
-        // output data of each row
-        while($row = $result->fetch_assoc()) {
-            echo "id: " . $row["flowerName"] . "<br>";
-        }
-    } else {
-        echo "0 results";
-    }
+
+
+     # $flowers = $result->fetch_assoc();
+
+
+
     $conn->close();
 
 
@@ -89,86 +91,37 @@
 
             <table>
                     <tr>
-                      <th>#</th>
                       <th>Flower</th>
                       <th>Image</th>
                       <th>Description</th>
                       <th>Price</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Tulip</td>
-                        <td> <a href="tulips.html"><img src="imgs/tulips.jpg"></a></td>
-                        <td>Bright Pink Tulips Grown in California; 10 in a bundle.</td>
-                        <td>$15</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Carnation</td>
-                        <td><a href="carnation.html"><img src="imgs/Carnation-Flower.jpg"> </a></td>
-                        <td> Available in Pink and Blue; 10 in a bundle.</td>
-                        <td>$25</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Forget Me Not</td>
-                        <td> <a href="fmn.html"><img src="imgs/forget-me-not.jpg"></a></td>
-                        <td>Beautiful bouquet of wild Forget Me Not flowers.</td>
-                        <td>$30</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Lotus</td>
-                        <td><a href="lotus.html"><img src="imgs/lotus.jpg"></a></td>
-                        <td>Rare Pink Louts</td>
-                        <td>$20</td>
-                    </tr>
-                    <tr>
-                            <td>5</td>
-                            <td>Jasmine</td>
-                            <td><a href="jasmine.html"><img src="imgs/jasmine.jpg"></a></td>
-                            <td>White Jasmines available in a bundle of 5.</td>
-                            <td>$25</td>
-                        </tr>
-                        <tr>
-                                <td>6</td>
-                                <td>Peony</td>
-                                <td><a href="peony.html"><img src="imgs/pink-peony.jpg"></a></td>
-                                <td>Pink Peonies; 4 available in a bundle.</td>
-                                <td>$30</td>
-                            </tr>
-                            <tr>
-                                    <td>7</td>
-                                    <td>Rose</td>
-                                    <td><a href="rose.html"><img src="imgs/rose.jpg"></a></td>
-                                    <td>Classic and beautiful. Perfect for any occasion; 8 in a bundle.</td>
-                                    <td>$27</td>
-                                </tr>
     
-                            <tr>
-                                    <td>8</td>
-                                    <td>Hibiscus</td>
-                                    <td><a href="hibiscus.html"><img src="imgs/hibiscus.jpg"></a</td>
-                                    <td>Known for their large and colorful properties - this flower is also used for tea. 
-                                        5 in a bundle.<br> </td>
-                                    <td>$26</td>
-                                </tr>
-                            <tr>
-                                    <td>9</td>
-                                    <td>Windflower</td>
-                                    <td><a href="windflower.html"><img src="imgs/windflower.jpg"></a></td>
-                                    <td>Available in purple and white; 20 in a bundle.</td>
-                                    <td>$16</td>
-                                            </tr>
-                            
-                            <tr>
-                                    <td>10</td>
-                                    <td>Violet</td>
-                                    <td><a href="violet.html"><img src="imgs/violet.jpg"></a></td>
-                                    <td>Available in violet; 12 in a bundle.</td>
-                                    <td>$12</td>
+    <?php 
+
+
+
+
+
+     
+
+                      foreach($result as $res)
+                      {
+
+                        echo "<tr>";
+                        echo "<td>" . $res["flowerName"] . " </td>";
+                        echo "<td> <img src=".  $res["url"] . " /> </td>";
+                        echo "<td>" . $res["description"] . "</td>";
+                        echo "<td> $" . $res["price"] ."</td>";
+                        echo "</tr>";
                       
-                                            </tr>
+                      }
+
+                    
+        
+      ?>
+ 
+
                   </table>
        
     </div>
