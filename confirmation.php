@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -54,18 +54,17 @@
         <h1 id="confTexth1"> Thank you for your order!</h1>
         <p id="confText"> Here are your order details:<p> 
         <p id="confParagraph"> 
-            You purchased X amount of Y flowers for a total of $Z <br>
             Your order will be shipped to: <br>
-                &emsp; address goes here <br>
-                &emsp; city, state zipcode <br>
+                &emsp; <?php echo  $_POST["address"]?> <?php echo  $_POST["inputAddress2"]?> <br>
+                &emsp; <?php echo  $_POST["city"]?>, <?php echo  $_POST["state"]?> <?php echo  $_POST["zip"]?> <br>
             
             with the shipping type: {shipping type} <br>
         </p>
 
         <p id="confText"> 
-            Subtotal: {} <br>
+            Subtotal: {<?php echo  $_POST["email"]?>} <br>
             Tax: {} <br>
-            Total: {} <br> </p>
+            Total: {} <br> </php>
         </div>
     </div>
 
@@ -73,5 +72,5 @@
 
 </body>
 
-<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
 </html>

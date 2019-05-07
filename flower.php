@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -155,7 +155,6 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-              echo  $all_images[0]
               <?php 
       
               echo "<img src=".  $all_images[0] . "   class=\"d-block \"
@@ -199,14 +198,14 @@
             </a>
           </div>
 
-          <form id="form" action="confirmation.php">
+          <form id="form" action="./confirmation.php" method="POST">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="inputEmail4"
+                  name="email"
                   placeholder="Email"
                   required
                 />
@@ -216,7 +215,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="inputPID"
+                  name="pidS"
                   placeholder="Product ID"
                   required
                 />
@@ -229,7 +228,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="fistName"
+                  name="fistName"
                   placeholder="First Name"
                   required
                 />
@@ -239,40 +238,42 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="lastName"
+                  name="lastName"
                   placeholder="Last Name"
                   required
                 />
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-row">
+              <div class="form-group col-md-6">
               <label for="inputAddress">Address</label>
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
+                name="address"
                 placeholder="1234 Main St"
                 required
               />
             </div>
-            <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
+            <div class="form-group col-sm">
+              <label for="inputAddress2">Apartment/Suite/floor</label>
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
+                name="inputAddress2"
                 placeholder="Apartment, studio, or floor"
                 required
               />
             </div>
+            </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity" />
+                <input type="text" class="form-control" name="city" />
               </div>
               <div class="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select id="inputState" class="form-control" required>
+                <select name="state" class="form-control" required>
                   <option selected>Choose...</option>
                   <option>California</option>
                 </select>
@@ -282,7 +283,7 @@
                 <input
                   type="number"
                   class="form-control"
-                  id="inputZip"
+                  name="zip"
                   required
                 />
               </div>
@@ -294,13 +295,13 @@
                 <input
                   type="number"
                   class="form-control"
-                  id="inputCreditCard"
+                  name="cc"
                   required
                 />
               </div>
               <div class="form-group col-md-4">
                 <label for="shipping">Shipping</label>
-                <select id="shipping" class="form-control" required>
+                <select name="shipping" class="form-control" required>
                   <option selected>Choose...</option>
                   <option>overnight</option>
                   <option>2-day expedited </option>
@@ -312,7 +313,7 @@
                 <input
                   type="number"
                   class="form-control"
-                  id="phoneNumber"
+                  name="phonenumber"
                   required
                 />
               </div>
@@ -329,6 +330,5 @@
       </div>
     </div>
   </body>
-  <script type="text/javascript" src="/js/navbar.js"></script>
-  <script type="text/javascript" src="/js/form.js"></script>
+  <script type="text/javascript" src="js/navbar.js"></script>
 </html>

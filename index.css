@@ -36,6 +36,16 @@ img {
   background-size: cover;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
 #aboutTexth1 {
   font-family: "Exo 2", sans-serif;
   font-size: 40px;
@@ -71,10 +81,10 @@ img {
   text-align: left;
   margin-top: 40px;
   color: white;
-  width: 300px
+  width: 300px;
 }
 
-#conformationBox{
+#conformationBox {
   width: 50%;
   height: 50%;
 }
@@ -127,7 +137,6 @@ img {
   color: white;
 }
 
-
 #carouselExampleIndicators {
   width: 500px;
 }
@@ -173,7 +182,8 @@ img {
   color: white;
 }
 
-#shop td,th {
+#shop td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -185,26 +195,22 @@ img {
   color: #f28777;
 }
 
+#shop td img {
+  width: 150px;
+  height: 150px;
+}
+
+#shop td a img:hover {
+  width: 300px;
+  height: 300px;
+}
 
 #shop td img {
   width: 150px;
   height: 150px;
 }
 
-#shop td a img:hover
-{
-  width: 300px;
-  height: 300px;
-}
-
-#shop td img{
-  width: 150px;
-  height: 150px;
-}
-
-
-#tulip
-{
+#tulip {
   color: white;
   margin-top: 150px;
 }
