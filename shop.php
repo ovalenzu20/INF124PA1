@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
@@ -22,9 +22,15 @@
 
       $dbhost = "localhost";
       $dbuser = "root";
-      $dbpass = "";
+      $dbpass = "root";
       $db = "MotherEarth";
       $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
+
+
+
+      if ($conn) {
+  
+      }
 
 
 
@@ -121,6 +127,6 @@
     </div>
 
   </body>
-  <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
 </html>
 

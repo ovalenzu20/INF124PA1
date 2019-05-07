@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -103,12 +103,18 @@
         WHERE flowers.flowerName = '$fName' and flowersImages.type = 'sub'";
         $result1 = $conn->query($sql);
 
+
+        $all_images = array("1", "2", "3");
+        $value = 0;
         foreach($result1 as $res)
         {
-          echo "";
+          $all_images[$value] = $res["url"];
+          $value++;
+  
         }
-
+    
         # $flowers = $result->fetch_assoc();
+
 
 
 
@@ -121,11 +127,12 @@
 
         <?php 
 
-        echo "<h1> Product ID " . $res["flowerName"] . " </h1>";
+        echo "<h1> Product ID: " . $res["flowerName"] . " </h1>";
 
         echo "<h4> " . $res["extendedDescription"] . " </h4>";
+    
 
-
+    
 ?>
       
     
@@ -155,7 +162,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="imgs/rose1.jpg"
+                  src= <?php $all_images[0]?>
                   class="d-block"
                   style="width:500px; height: 300px;"
                   alt="..."
@@ -329,6 +336,6 @@
       </div>
     </div>
   </body>
-  <script type="text/javascript" src="js/navbar.js"></script>
-  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+  <script type="text/javascript" src="/js/form.js"></script>
 </html>
