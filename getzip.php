@@ -6,12 +6,12 @@
     $zip = ($_GET['zip']);
 
 
-    
+    echo "<script>console.log( Something );</script>";
     $sql = "SELECT state, city FROM zipcodetable WHERE  zip = $zip";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
-
+    echo 'afterconnection';
     $Obj = new stdClass();
 
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
