@@ -21,10 +21,22 @@ CREATE TABLE IF NOT EXISTS `flowersImages` (
   PRIMARY KEY (`imageID`)
 );
 
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE IF NOT EXISTS `orders` (
+  `productID` varchar(100) NOT NULL,
+  `firstName` varchar(100),
+  `lastName` varchar(400),
+  `address` varchar(100),
+  `address2` varchar(100),
+  `city` varchar(100),
+  `state` varchar(100),
+  `zip` varchar(100),
+  `creditCardNumber` varchar(100),
+  `shippingType` varchar(100),
+  `phoneNumber` varchar(100),
 
-
-
-
+  PRIMARY KEY (`productID`)
+);
 
 INSERT INTO flowers VALUES    
     ('Tulips', 15, 'Bright Pink Tulips Grown in California; 10 in a bundle.', 'Tulips are very popular around the world and are known for their beautiful hues. They can be found in a variety of sizes and colors.'),
