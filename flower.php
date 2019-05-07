@@ -161,28 +161,28 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  src= <?php $all_images[0]?>
-                  class="d-block"
-                  style="width:500px; height: 300px;"
-                  alt="..."
-                />
+              echo  $all_images[0]
+              <?php 
+      
+              echo "<img src=".  $all_images[0] . "   class=\"d-block \"
+              style=\"width:500px; height: 300px;\"
+              alt=\"...\"   />" ?>
+
+            
               </div>
               <div class="carousel-item">
-                <img
-                  src="imgs/rose2.jpg"
-                  class="d-block "
-                  style="width:500px; height: 300px;"
-                  alt="..."
-                />
+              <?php 
+      
+      echo "<img src=".  $all_images[1] . "   class=\"d-block \"
+      style=\"width:500px; height: 300px;\"
+      alt=\"...\"   />" ?>
               </div>
               <div class="carousel-item">
-                <img
-                  src="imgs/rose3.jpg"
-                  class="d-block"
-                  style="width:500px; height: 300px;"
-                  alt="..."
-                />
+              <?php 
+      
+      echo "<img src=".  $all_images[2] . "   class=\"d-block \"
+      style=\"width:500px; height: 300px;\"
+      alt=\"...\"   />" ?>
               </div>
             </div>
             <a
