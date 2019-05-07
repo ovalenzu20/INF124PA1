@@ -15,18 +15,10 @@
     <title>Shop Mother Earth</title>
   </head>
 <body style="background: #F28777">
+<?php include 'connection.php'; ?>
 
 <?php 
     
-
-
-      $dbhost = "localhost";
-      $dbuser = "root";
-      $dbpass = "";
-      $db = "MotherEarth";
-      $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
-
-
 
 
       $sql = "SELECT flowers.flowerName, flowers.price, flowers.description, blah.url
@@ -35,16 +27,6 @@
       FROM flowersImages
       WHERE type = 'header') as blah";
       $result = $conn->query($sql);
-
-
-
-     # $flowers = $result->fetch_assoc();
-
-
-
-    $conn->close();
-
-
 
 
 ?>
@@ -92,13 +74,6 @@
                     </tr>
     
     <?php 
-
-
-
-
-
-     
-
                       foreach($result as $res)
                       {
 

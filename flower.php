@@ -79,15 +79,10 @@
         </div>
       </div>
     </div>
+    <?php include 'connection.php'; ?>
 
     <?php
 
-
-        $dbhost = "localhost";
-        $dbuser = "root";
-        $dbpass = "root";
-        $db = "MotherEarth";
-        $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
 
 
 
@@ -112,7 +107,7 @@
 
 
 
-        $conn->close();
+        // $conn->close();
     ?>
 
     <div id="tulip">
