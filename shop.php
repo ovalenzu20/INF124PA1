@@ -110,7 +110,7 @@
 
                         echo "<tr>";
                         echo "<td>" . $res["flowerName"] . " </td>";
-                        echo "<td> <img src=".  $res["url"] . " /> </td>";
+                        echo "<td> <a href=flower.php?flowerName=" . $res["flowerName"] . "> <img src=".  $res["url"] . " /> </a> </td>";
                         echo "<td>" . $res["description"] . "</td>";
                         echo "<td> $" . $res["price"] ."</td>";
                         echo "</tr>";

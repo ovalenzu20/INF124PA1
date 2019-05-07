@@ -80,15 +80,55 @@
       </div>
     </div>
 
+    <?php
+
+
+        $dbhost = "localhost";
+        $dbuser = "root";
+        $dbpass = "root";
+        $db = "MotherEarth";
+        $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
+
+
+
+        if ($conn) {
+
+        }
+
+
+        $fName = $_GET['flowerName'];
+
+        $sql = "SELECT flowers.flowerName, flowers.price, flowers.description, flowers.extendedDescription, flowersImages.url
+        FROM flowers NATURAL JOIN flowersImages
+        WHERE flowers.flowerName = '$fName' and flowersImages.type = 'sub'";
+        $result1 = $conn->query($sql);
+
+        foreach($result1 as $res)
+        {
+          echo "";
+        }
+
+        # $flowers = $result->fetch_assoc();
+
+
+
+        $conn->close();
+    ?>
+
     <div id="tulip">
       <div class="container">
         <div class="jumbotron" style="background:#77f2b6; ">
-          <h1>Roses! Product ID: 7</h1>
-          <h4>
-            The classic flower! An amazing gift to your love ones. Classy and
-            beautiful. <br />
-            Sold in a bundle of 8 - $27
-          </h4>
+
+        <?php 
+
+        echo "<h1> Product ID " . $res["flowerName"] . " </h1>";
+
+        echo "<h4> " . $res["extendedDescription"] . " </h4>";
+
+
+?>
+      
+    
           <hr class="my-4" />
 
           <div
