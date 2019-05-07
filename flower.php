@@ -60,7 +60,7 @@
 
         <div class="menu">
           <div class="menuItem">
-            <a href="index.html" style="color:white;">Home</a>
+            <a href="index.php" style="color:white;">Home</a>
           </div>
 
           <div class="menuItem">
@@ -70,7 +70,7 @@
             <a style="color:white;" href="contact.html">Contact</a>
           </div>
           <div class="menuItem">
-            <a href="flowers.html" style="color:white;">Shop</a>
+            <a href="shop.php" style="color:white;">Shop</a>
           </div>
         </div>
 
