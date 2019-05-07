@@ -67,7 +67,7 @@
         Created by: Gyulnara Grigoryan, Gevork Gabrielyan, Omar Valenzuela
       </p>
 
-      <a id="infoButton" href="flowers.html">
+      <a id="infoButton" href="shop.php">
         Shop MotherEarth
       </a>
     </div>

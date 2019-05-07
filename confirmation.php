@@ -47,12 +47,26 @@
                 <i class="hamburger fa fa-bars fa-1x" aria-hidden="true"></i>
             </div>
         </div>
-
     </div>
 
-    <div id="heroImage">
-        <h1 id="aboutTexth1">Thank you for your order!</h1>
-        <p id="aboutText">Here are your order details: <br>
+    <div id="confImage">
+        <div id = "conformationBox">
+        <h1 id="confTexth1"> Thank you for your order!</h1>
+        <p id="confText"> Here are your order details:<p> 
+        <p id="confParagraph"> 
+            You purchased X amount of Y flowers for a total of $Z <br>
+            Your order will be shipped to: <br>
+                &emsp; address goes here <br>
+                &emsp; city, state zipcode <br>
+            
+            with the shipping type: {shipping type} <br>
+        </p>
+
+        <p id="confText"> 
+            Subtotal: {} <br>
+            Tax: {} <br>
+            Total: {} <br> </p>
+        </div>
     </div>
 
 

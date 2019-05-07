@@ -205,7 +205,7 @@
             </a>
           </div>
 
-          <form id="form">
+          <form id="form" action="confirmation.php">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
@@ -325,9 +325,8 @@
             </div>
 
             <button
-              type="submit"
+            type="submit" value="Submit"
               class="btn btn-primary"
-              onclick="buildemail()"
             >
               Confirm
             </button>

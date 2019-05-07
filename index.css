@@ -58,6 +58,45 @@ img {
   color: white;
 }
 
+#confTexth1 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+#confText {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 40px;
+  color: white;
+  width: 300px
+}
+
+#conformationBox{
+  width: 50%;
+  height: 50%;
+}
+#confParagraph {
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+  text-align: left;
+  margin-left: 5%;
+  color: white;
+}
+
+#confImage {
+  background-image: url("imgs/headerimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #contactText {
   font-family: "Exo 2", sans-serif;
   font-size: 20px;
@@ -87,6 +126,7 @@ img {
   text-align: center;
   color: white;
 }
+
 
 #carouselExampleIndicators {
   width: 500px;
