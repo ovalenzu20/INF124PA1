@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/flowerpage.css" />
+
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
     <link
       rel="stylesheet"
@@ -103,6 +105,7 @@
         $value = 0;
         foreach($result1 as $res)
         {
+          $price = $res["price"];
           $all_images[$value] = $res["url"];
           $value++;
   
@@ -132,6 +135,7 @@
     
           <hr class="my-4" />
 
+          <div id="infocontainer">
           <div
             id="carouselExampleIndicators"
             class="carousel slide"
@@ -166,16 +170,16 @@
               <div class="carousel-item">
               <?php 
       
-      echo "<img src=".  $all_images[1] . "   class=\"d-block \"
-      style=\"width:500px; height: 300px;\"
-      alt=\"...\"   />" ?>
+              echo "<img src=".  $all_images[1] . "   class=\"d-block \"
+              style=\"width:500px; height: 300px;\"
+              alt=\"...\"   />" ?>
               </div>
               <div class="carousel-item">
               <?php 
       
-      echo "<img src=".  $all_images[2] . "   class=\"d-block \"
-      style=\"width:500px; height: 300px;\"
-      alt=\"...\"   />" ?>
+              echo "<img src=".  $all_images[2] . "   class=\"d-block \"
+              style=\"width:500px; height: 300px;\"
+              alt=\"...\"   />" ?>
               </div>
             </div>
             <a
@@ -197,8 +201,49 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          <div id="receipt">
+            <p>Price:..................... <span id="Rprice"> <?php echo $price ?></span ></p>
+            <p>Tax:....................... <span id="Rtax"> 0 </span ></p>
+            <hr class="my-4" />
+            <p>Total:..................... <span id="Rtotal"> </span ></p>
+
+          
+          </div >
+
+          </div>
+
+
+
 
           <form id="form" action="./confirmation.php" method="POST">
+
+          <hr class="my-4" />
+
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="fistName"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+
+          
+
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
@@ -222,28 +267,9 @@
               </div>
             </div>
 
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="firstName">First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="fistName"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div class="form-group col-md-6">
-                <label for="lastName">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="lastName"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-            </div>
+
+            <hr class="my-4" />
+     
             <div class="form-row">
               <div class="form-group col-md-6">
               <label for="inputAddress">Address</label>
@@ -269,13 +295,63 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" class="form-control" name="city" />
+                <input id="city" type="text" class="form-control" name="city" />
               </div>
               <div class="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select name="state" class="form-control" required>
-                  <option selected>Choose...</option>
-                  <option>California</option>
+                <select id="state" name="state" class="form-control" required>
+                  <option value="first" selected>Choose...</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
                 </select>
               </div>
               <div class="form-group col-md-2">
@@ -284,10 +360,13 @@
                   type="number"
                   class="form-control"
                   name="zip"
+                  id="zip"
                   required
                 />
               </div>
             </div>
+
+            <hr class="my-4" />
 
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -331,4 +410,6 @@
     </div>
   </body>
   <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
+
 </html>

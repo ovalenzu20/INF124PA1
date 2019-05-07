@@ -18,14 +18,10 @@
 
     if ($row  != null) {    
     
-        echo $row["city"];
-
         $Obj->city = $row["city"];
         $Obj->state = $row["state"];
     
-    }else{
-        echo $row["city"];
-  
+    }else{  
         $Obj->city = 'null';
         $Obj->state =  'null';
     }
