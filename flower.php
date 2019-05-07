@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -60,7 +60,7 @@
 
         <div class="menu">
           <div class="menuItem">
-            <a href="index.html" style="color:white;">Home</a>
+            <a href="index.php" style="color:white;">Home</a>
           </div>
 
           <div class="menuItem">
@@ -70,7 +70,7 @@
             <a style="color:white;" href="contact.html">Contact</a>
           </div>
           <div class="menuItem">
-            <a href="flowers.html" style="color:white;">Shop</a>
+            <a href="shop.php" style="color:white;">Shop</a>
           </div>
         </div>
 
@@ -98,11 +98,16 @@
         WHERE flowers.flowerName = '$fName' and flowersImages.type = 'sub'";
         $result1 = $conn->query($sql);
 
+
+        $all_images = array("1", "2", "3");
+        $value = 0;
         foreach($result1 as $res)
         {
-          echo "";
+          $all_images[$value] = $res["url"];
+          $value++;
+  
         }
-
+    
         # $flowers = $result->fetch_assoc();
 
 
@@ -116,11 +121,12 @@
 
         <?php 
 
-        echo "<h1> Product ID " . $res["flowerName"] . " </h1>";
+        echo "<h1> Product ID: " . $res["flowerName"] . " </h1>";
 
         echo "<h4> " . $res["extendedDescription"] . " </h4>";
+    
 
-
+    
 ?>
       
     
@@ -149,28 +155,28 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  src="imgs/rose1.jpg"
-                  class="d-block"
-                  style="width:500px; height: 300px;"
-                  alt="..."
-                />
+              echo  $all_images[0]
+              <?php 
+      
+              echo "<img src=".  $all_images[0] . "   class=\"d-block \"
+              style=\"width:500px; height: 300px;\"
+              alt=\"...\"   />" ?>
+
+            
               </div>
               <div class="carousel-item">
-                <img
-                  src="imgs/rose2.jpg"
-                  class="d-block "
-                  style="width:500px; height: 300px;"
-                  alt="..."
-                />
+              <?php 
+      
+      echo "<img src=".  $all_images[1] . "   class=\"d-block \"
+      style=\"width:500px; height: 300px;\"
+      alt=\"...\"   />" ?>
               </div>
               <div class="carousel-item">
-                <img
-                  src="imgs/rose3.jpg"
-                  class="d-block"
-                  style="width:500px; height: 300px;"
-                  alt="..."
-                />
+              <?php 
+      
+      echo "<img src=".  $all_images[2] . "   class=\"d-block \"
+      style=\"width:500px; height: 300px;\"
+      alt=\"...\"   />" ?>
               </div>
             </div>
             <a
@@ -193,7 +199,7 @@
             </a>
           </div>
 
-          <form id="form">
+          <form id="form" action="confirmation.php">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
@@ -313,9 +319,8 @@
             </div>
 
             <button
-              type="submit"
+            type="submit" value="Submit"
               class="btn btn-primary"
-              onclick="buildemail()"
             >
               Confirm
             </button>
@@ -324,6 +329,6 @@
       </div>
     </div>
   </body>
-  <script type="text/javascript" src="js/navbar.js"></script>
-  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+  <script type="text/javascript" src="/js/form.js"></script>
 </html>

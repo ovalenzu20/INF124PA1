@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
@@ -42,7 +42,7 @@
             </div>
             <div class="menu">
                     <div class="menuItem">
-                      <a href="index.html" style="color:white">Home</a>
+                      <a href="index.php" style="color:white">Home</a>
                     </div>
           
                     <div class="menuItem">
@@ -51,7 +51,7 @@
                     <a class="menuItem" style="color:white" href="contact.html"> Contact
                     </a>
                     <div class="menuItem">
-                      <a href="flowers.html" style="color:white">Shop</a>
+                      <a href="shop.php" style="color:white">Shop</a>
                     </div>
                   </div>
 
@@ -96,6 +96,6 @@
     </div>
 
   </body>
-  <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
 </html>
 
