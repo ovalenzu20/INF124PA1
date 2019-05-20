@@ -62,3 +62,15 @@ Link: http://centaurus-13.ics.uci.edu:1057/index.php
 - [x] After successfully storing the order information in a database table, a dynamically generated confirmation page should to be displayed to the user with the details of the order.
 
 - [x] Use Ajax to make your website dynamic and interactive. Among others, you could use Ajax to assist the user with filling the order forms, e.g., when the user chooses a particular state for delivery, obtain the corresponding tax rate from the backend database to update the total price for the product dynamically, or as another example, provide auto complete capability, such as suggesting states as the user types the name of a state. You can use these files to help with this task: zip codesPreview the document and tax ratesPreview the document. You have freedom in identifying other opportunities for using Ajax in making your website dynamic and interactive. At the very least, your website should make use of Ajax for two non-trivial features that the grader can verify.
+
+
+# INF124PA3
+
+Notes: 
+
+
+-[ ] Include the output of two servlets to create the homepage for your e-commerce site: the first servlet should handle the displaying of the list of products obtained from a backend database, and the second servlet should use session tracking to display the last 5 products that the user has visited (viewed the product details page). In case this number is less than 5, show whatever amount of information you have stored in the session. You are required to use servlet "include" feature to implement this requirement. 
+
+- [ ] Using servlets create a "product details" page. This page should take a product identifier as a parameter and show the product details after getting the relevant information from the database. This page should NOT have an order form, only a button to "Add to Cart". Use servlet "session" to store the products in a shopping cart. 
+
+- [ ] Using servlets create a "check out" page, which allows the user to place an order. The page should show all the products in the shopping cart and the total price. This page should have a form which will allow the user to do the following:Enter shipping information: name, shipping address, phone number, credit card number, etc. Submit the order for storage in the backend database On successful submission, forward to the order details page. You are required to use servlet "forward" feature to implement this requirement. 
